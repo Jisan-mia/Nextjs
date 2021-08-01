@@ -1,0 +1,16 @@
+.allNinjas{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(330px, 1fr));
+    grid-gap: 20px;
+}
+
+.ninja{
+    background-color: #fff;
+    padding: 10px 20px;   
+    border-left: 8px solid transparent;
+    display: block;
+    cursor: pointer;
+}
+.ninja:hover{
+    border-left: 8px solid #4970ff;
+}

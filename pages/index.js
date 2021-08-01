@@ -1,12 +1,23 @@
-
+import Link from 'next/link'
+import Head from 'next/head'
 import styles from '../styles/Home.module.css'
 
 export default function Home() {
   return (
-    <div>
-        <h1>Home Page</h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto, vel quasi necessitatibus ut sit eaque voluptates cupiditate architecto, excepturi soluta sunt nam, quod cum est perferendis reprehenderit. Repellat, culpa commodi.</p>
-        <p>Eius nihil laboriosam voluptates! Sequi quaerat cum fugiat soluta, facere temporibus incidunt vero eaque! Culpa quo suscipit, quas deleniti corrupti praesentium, odio hic sequi accusamus aliquam nam consequuntur totam. Reprehenderit.</p>
-    </div>
+    <>
+    <Head> 
+      <title>Ninja Lists | Home</title>
+      <meta name="keywords" content="Ninjas Lists" />
+    </Head> 
+      <div>
+          <h1 className={styles.title}>Home page</h1>
+          <p className={styles.text} >Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque nobis optio commodi in. Deserunt inventore doloribus doloremque neque similique mollitia?</p>
+          <p className={styles.text} >Corrupti aut fugit, voluptatum omnis, nulla labore ducimus, maiores at accusamus accusantium recusandae magni temporibus doloribus? Accusamus optio quibusdam tempore!</p>
+
+          <Link href="/ninjas">
+            <a className={styles.button}>See Ninja Lists</a>
+          </Link>
+      </div>
+    </>
   )
 }
